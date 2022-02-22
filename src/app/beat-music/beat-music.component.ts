@@ -9,7 +9,7 @@ const CANVAS_WIDTH_SCALE        : number = 0.80;
 const CANVAS_STATIC_KEYS_OFFSET : number = 100;
 const COUNT_DOWN                : number = 3;
 const CIRCLE_FILL_TIME          : number = 0.12;
-const BEAT_MAP_GEN              : boolean = true;
+const BEAT_MAP_GEN              : boolean = false;
 const DYNAMIC_CIRC_RAD_OFFSET   : number = 4;
 
 const C_SCALE: number = 50; // Scale used to compute the Circle's radius from the screen width

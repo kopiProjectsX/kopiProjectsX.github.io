@@ -8,12 +8,14 @@ import { BeatMusicComponent } from './beat-music/beat-music.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { MaterialModule } from 'src/helpers/modules/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BeatMusicComponent,
-    FrontpageComponent
+    FrontpageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

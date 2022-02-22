@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './frontpage.component.html',
   styleUrls: ['./frontpage.component.scss']
 })
-export class FrontpageComponent implements OnInit {
+export class FrontpageComponent implements OnInit
+{
 
-  constructor() { }
+    constructor()
+    {
+        
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void
+    {
+
+    }
 
 }

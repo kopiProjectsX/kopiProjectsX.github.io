@@ -1,25 +1,26 @@
-<div>
-    <img id="bg-game" [src]="getUrl()" class="nonDraggableImage" style="width: 100%; height: auto;">
-    <div class="overlay-score" style="font-size: 48px;" >
-        <!-- Score: {{points}} -->
+<div style="position: absolute;">
+    <img id="bg-game" [src]="bgImage" class="nonDraggableImage" style="width: 100%; height: auto;">
+    <div class="overlay-main score">
+        Score: {{totalScore}}
     </div>
-    <div class="overlay-left" style="font-size: 14px;" >
+    <div class="overlay-main left">
         Credit Artwork & Music: Riot Games, League of Legends
     </div>
-    <div class="overlay-load" style="z-index: 9;">
-        <!-- <button mat-fab color="accent" type="button" *ngIf="!isPlaying" (click)="onFileChanged()">
+    <div class="overlay-main play">
+        <button mat-fab color="accent" type="button" *ngIf="!gameRunning" (click)="startGame()">
             <i class="material-icons">play_arrow</i> 
         </button>
-        <button mat-fab color="accent" type="button" *ngIf="isPlaying" [disabled]="timeCount != ''" (click)="stopGame('Game Over')">
+        <button mat-fab color="accent" type="button" *ngIf="gameRunning" 
+            [disabled]="dispMsg != ''" (click)="stopGame('Game Over')">
             <i class="material-icons">stop</i> 
-        </button>  -->
+        </button> 
     </div>
-    <div class="overlay-load3" style="color: white; font-size: 48px; font-weight: 500;">
-        <!-- {{hitScore}} -->
+    <div class="overlay-main hitscore">
+        {{hitScore}}
     </div>
-    <div class="overlay-load2" style="color: white; font-size: 64px; font-weight: 700;">
-        <!-- {{timeCount}} -->
+    <div class="overlay-main disp-msg">
+        {{dispMsg}}
     </div>
     <canvas #canvas class="overlay"></canvas>
-    
 </div>
+<audio #audio id="audio" [src]="songURL" preload="metadata" crossorigin="anonymous"></audio>

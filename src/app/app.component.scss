@@ -1,0 +1,33 @@
+body
+{
+    font-family: helvetica;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+img
+{
+    border: 0;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+::-webkit-scrollbar
+{
+    -webkit-appearance: none;
+    width: 5px;
+}
+  
+::-webkit-scrollbar-thumb
+{
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.mat-sidenav-content {
+    background: #fffffffb; //website background
+    flex: 1;
+  }

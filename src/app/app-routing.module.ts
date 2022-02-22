@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BeatMusicComponent } from './beat-music/beat-music.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
 
 const routes: Routes =
 [
-  { path: 'beat',                                       component: BeatMusicComponent               },
+  { path: 'fp', component: FrontpageComponent},
+  { path: 'play', component: BeatMusicComponent},
 ];
 
 @NgModule({

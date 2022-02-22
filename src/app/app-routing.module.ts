@@ -5,8 +5,7 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
 
 const routes: Routes =
 [
-  { path: 'fp', component: FrontpageComponent},
-  { path: 'play', component: BeatMusicComponent},
+  { path: '', component: BeatMusicComponent},
 ];
 
 @NgModule({

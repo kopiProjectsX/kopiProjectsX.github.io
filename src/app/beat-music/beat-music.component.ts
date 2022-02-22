@@ -434,7 +434,9 @@ export class BeatMusicComponent implements OnInit
     public clearCanvas(width: number, height: number)
     {
         this.ctx?.clearRect(0, 0, width, height);
-        this.ctx?.strokeRect(0, 0, width, height);
+
+        // Debug Outline
+        // this.ctx?.strokeRect(0, 0, width, height);
     }
 
     // x - coordinate, y - coordinate, rad - radius, c - fill/stroke style (color), f - fill or stroke, l - text

@@ -1,0 +1,25 @@
+<div>
+    <img id="bg-game" [src]="getUrl()" class="nonDraggableImage" style="width: 100%; height: auto;">
+    <div class="overlay-score" style="font-size: 48px;" >
+        <!-- Score: {{points}} -->
+    </div>
+    <div class="overlay-left" style="font-size: 14px;" >
+        Credit Artwork & Music: Riot Games, League of Legends
+    </div>
+    <div class="overlay-load" style="z-index: 9;">
+        <!-- <button mat-fab color="accent" type="button" *ngIf="!isPlaying" (click)="onFileChanged()">
+            <i class="material-icons">play_arrow</i> 
+        </button>
+        <button mat-fab color="accent" type="button" *ngIf="isPlaying" [disabled]="timeCount != ''" (click)="stopGame('Game Over')">
+            <i class="material-icons">stop</i> 
+        </button>  -->
+    </div>
+    <div class="overlay-load3" style="color: white; font-size: 48px; font-weight: 500;">
+        <!-- {{hitScore}} -->
+    </div>
+    <div class="overlay-load2" style="color: white; font-size: 64px; font-weight: 700;">
+        <!-- {{timeCount}} -->
+    </div>
+    <canvas #canvas class="overlay"></canvas>
+    
+</div>

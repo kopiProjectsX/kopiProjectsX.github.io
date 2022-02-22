@@ -26,6 +26,17 @@
     text-align: center;
 }
 
+
+.bot-left
+{
+    top: 85%;
+    left: 2.5%;
+    transform: translate(-5%, -5%);
+    -ms-transform: translate(-5%, -5%);
+    color: white;
+    z-index: 9;
+}
+
 .left
 {
     top: 0%;
